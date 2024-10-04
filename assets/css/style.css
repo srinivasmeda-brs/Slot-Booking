@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.lead {
+    color: #555;
+}
+
+.btn, .btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 10px 15px;
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select {
+    padding: 10px 20px 10px 10px;
+    appearance: none;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    background: transparent;
+}
+
+.swap-rate-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate {
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+.event {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.event:hover {
+    background-color: #e7f1ff;
+    transform: scale(1.02);
+}
+
+#event-marker {
+    content: "\A";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#load {
+    display: none; /* Hide spinner initially */
+}
+
+#slot_data {
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.time-slot {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.time-slot:hover {
+    background-color: #e7f1ff;
+    transform: scale(1.02);
+}
+
+.text-success {
+    color: var(--primary-color) !important;
+}
+
+@media (max-width: 600px) {
+    .currency input {
+        width: 200px;
+    }
+}
